@@ -1,0 +1,27 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap');
+
+  body {
+    font-family: "Comfortaa", cursive;
+  }
+
+  .container {
+    border: 1px solid lightseagreen;
+
+    width: 95%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hex-colors h1{
+    font-size: 2rem;
+    text-transform: uppercase;
+    animation: changecolor 5s ifinite alternate;
+  }
+
+  .hex-color h2{
+    font-size: 2rem;
+    margin-top: 15%;
+  }
