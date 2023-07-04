@@ -6,7 +6,6 @@
   }
 
   .container {
-    border: 1px solid lightseagreen;
 
     width: 95%;
     height: 100vh;
@@ -15,13 +14,48 @@
     align-items: center;
   }
 
+  .hex-colors {
+    text-align: center;
+  }
+
   .hex-colors h1 {
     font-size: 2rem;
     text-transform: uppercase;
-    animation: changecolor 5s ifinite alternate;
+    animation: colorchange 5s infinite alternate;
   }
 
-  .hex-color h2 {
+  .hex-colors h2 {
     font-size: 2rem;
     margin-top: 15%;
   }
+
+  @keyframes colorchange {
+    0%{
+      color:lightsalmon;
+    }
+    20%{
+      color:lightgreen;
+    }
+    40%{
+      color:lightpink;
+    }
+    60%{
+      color:lightseagreen;
+    }
+    80%{
+      color:lightslategray;
+    }
+    100%{
+        color:lightyellow;
+      }
+    }
+  
+    @media(max-width:480px) {
+      .hex-colors h1 {
+        font-size: 1.5rem;
+      }
+
+      .hex-colors h2 {
+        font-size: 1.5rem;
+      }
+    }
